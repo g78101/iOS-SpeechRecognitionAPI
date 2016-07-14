@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE53E8661D34DA7E00D12B7C /* RecorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE53E8651D34DA7E00D12B7C /* RecorderView.m */; };
 		EE8D49FC1D33411800CC886B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8D49FB1D33411800CC886B /* main.m */; };
 		EE8D49FF1D33411800CC886B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8D49FE1D33411800CC886B /* AppDelegate.m */; };
 		EE8D4A021D33411800CC886B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8D4A011D33411800CC886B /* ViewController.m */; };
 		EE8D4A051D33411800CC886B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8D4A031D33411800CC886B /* Main.storyboard */; };
 		EE8D4A071D33411800CC886B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8D4A061D33411800CC886B /* Assets.xcassets */; };
 		EE8D4A0A1D33411800CC886B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8D4A081D33411800CC886B /* LaunchScreen.storyboard */; };
+		EE8D4A131D33412400CC886B /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8D4A121D33412400CC886B /* Speech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE53E8641D34DA7E00D12B7C /* RecorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderView.h; sourceTree = "<group>"; };
+		EE53E8651D34DA7E00D12B7C /* RecorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderView.m; sourceTree = "<group>"; };
 		EE8D49F71D33411800CC886B /* speechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8D49FB1D33411800CC886B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE8D49FD1D33411800CC886B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 		EE8D4A061D33411800CC886B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8D4A091D33411800CC886B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE8D4A0B1D33411800CC886B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8D4A121D33412400CC886B /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8D4A131D33412400CC886B /* Speech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				EE8D49F91D33411800CC886B /* speechTest */,
 				EE8D49F81D33411800CC886B /* Products */,
+				EE8D4A111D33412400CC886B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,8 @@
 				EE8D49FE1D33411800CC886B /* AppDelegate.m */,
 				EE8D4A001D33411800CC886B /* ViewController.h */,
 				EE8D4A011D33411800CC886B /* ViewController.m */,
+				EE53E8641D34DA7E00D12B7C /* RecorderView.h */,
+				EE53E8651D34DA7E00D12B7C /* RecorderView.m */,
 				EE8D4A031D33411800CC886B /* Main.storyboard */,
 				EE8D4A061D33411800CC886B /* Assets.xcassets */,
 				EE8D4A081D33411800CC886B /* LaunchScreen.storyboard */,
@@ -77,6 +86,14 @@
 				EE8D49FB1D33411800CC886B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE8D4A111D33412400CC886B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE8D4A121D33412400CC886B /* Speech.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,9 +127,20 @@
 				TargetAttributes = {
 					EE8D49F61D33411800CC886B = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = BX9CCBZ79L;
-						DevelopmentTeamName = "Polstar Technologies Inc.";
+						DevelopmentTeam = 77HT6AC98W;
+						DevelopmentTeamName = "CHEN CHIH-YING (Personal Team)";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -154,6 +182,7 @@
 			files = (
 				EE8D4A021D33411800CC886B /* ViewController.m in Sources */,
 				EE8D49FF1D33411800CC886B /* AppDelegate.m in Sources */,
+				EE53E8661D34DA7E00D12B7C /* RecorderView.m in Sources */,
 				EE8D49FC1D33411800CC886B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = speechTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.polstargps.polnav.speechTest;
+				PRODUCT_BUNDLE_IDENTIFIER = talkaYing.speechTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -283,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = speechTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.polstargps.polnav.speechTest;
+				PRODUCT_BUNDLE_IDENTIFIER = talkaYing.speechTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -307,6 +336,7 @@
 				EE8D4A101D33411800CC886B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

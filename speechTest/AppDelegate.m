@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  speechTest
 //
-//  Created by mini2012 on 2016/7/11.
-//  Copyright © 2016年 mini2012. All rights reserved.
+//  Created by Talka_Ying on 2016/7/11.
+//  Copyright © 2016年 Talka_Ying. All rights reserved.
 //
 
 #import "AppDelegate.h"
